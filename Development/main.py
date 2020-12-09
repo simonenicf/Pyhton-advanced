@@ -1,6 +1,7 @@
 import sys
 import pygame
 from pygame.locals import *
+import player
 
 # Necessary setup before you can start using pygame functionalities:
 pygame.init()
@@ -19,11 +20,6 @@ FPS     = 30
 
 BG_COLOUR = [0, 0, 0]
 IS_RUNNING = True
-
-
-playerSprite = pygame.image.load("../Art/spr_Player.png")
-playerRect = playerSprite.get_rect()
-playerSpeed = 5
 
 
 while IS_RUNNING:
